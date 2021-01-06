@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta  charset="utf-8" />
+<meta name="Keywords" content="服装,儿童,男士,女士，时尚，鞋子，包包，帽子" />
+<meta name="Description" content="衣服、鞋、帽、包一体的时尚聚集地" />
+<title>用户登录</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+     function check() {
+    if(document.getElementById("username").value=="") {
+        alert("没有输入用户名！");
+         return false;
+      } else if(document.getElementById("password").value=="") {
+        alert("没有输入密码！");
+        return false;
+      } else {
+        alert("提交成功！")
+        return true;
+       }
+    }
+   </script>
+</head>
+
+<body>
+
+<div class="header">
+   <div class="main">
+     <div class="logo">
+         <div class="logo_pic"><img src="../images/logo.png" / title="logo"></div>
+         <h1>衣服、鞋、帽、包一体的时尚聚集地</h1>
+     </div>
+     <div class="dh"><i>400-000-000000</i></div>
+     <div class="clear"></div>
+   </div>
+</div>
+<hr />
+<div class="nav">
+    <div class="main">
+         <div class="nav_left">
+            <a href="../index.html">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="product.html">时尚产品</a>
+            <a href="news.html">时尚资讯</a>
+            <a href="lianxi.html">联系我们</a>
+            <a href="denglu.html" class="on">用户登录</a>
+            <a href="shuoming.html">站点说明</a>
+         </div>
+         <div class="nav_right">
+             <ul>
+                <li><img src="../images/1.png" />时尚</li>
+                <li><img src="../images/2.png" />质好</li>
+                <li><img src="../images/3.png" />多样</li>
+             </ul>
+         </div>
+    </div>
+</div>
+
+<div class="banner"><img src="../images/banner6.jpg" / title="banner"></div>
+
+<div class="dl">
+   <h1>会员登录</h1>
+   <form name="form1">
+   <div class="d">
+       <div class="d_l">用户名</div>
+       <div class="d_r"><input type="text" name="name" class="input"  id="username"></div>
+   </div>
+   <div class="d">
+       <div class="d_l">密码</div>
+       <div class="d_r"><input type="password" name="name" value="" class="input"  id="password"></div>
+   </div>
+   <div class="tj"><input type="submit" value="登录" onclick="check()"></div>
+   <div class="zhuce"><b>*</b><a href="zhuce.html">还不是会员，点击注册账号</a></div>
+  </form>
+</div>
+
+<div class="foot">版权所有：新乡学院 20级计算机科学与技术(专升本)2班 赵永占 20204131110 </div>
+
+</body>
+</html>
