@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta  charset="utf-8" />
+<meta name="Keywords" content="服装,儿童,男士,女士，时尚，鞋子，包包，帽子" />
+<meta name="Description" content="衣服、鞋、帽、包一体的时尚聚集地" />
+<title>服饰</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectShake(targetElement)
+{
+	Spry.Effect.DoShake(targetElement);
+}
+function MM_preloadImages() { 
+  var d=document; 
+  if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { 
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; 
+  if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; 
+  for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); 
+  return x;
+}
+
+function MM_swapImage() { 
+  var i,j=0,x,a=MM_swapImage.arguments; 
+  document.MM_sr=new Array; 
+  for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; 
+    if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/5.JPG','images/4.JPG')">
+
+<div class="header">
+   <div class="main">
+     <div class="logo">
+         <div class="logo_pic"><img src="images/logo.png" / title="logo"></div>
+         <h1>衣服、鞋、帽、包一体的时尚聚集地</h1>
+     </div>
+     <div class="dh"><i>400-000-000000</i></div>
+     <div class="clear"></div>
+   </div>
+</div>
+<hr />
+<div class="nav">
+    <div class="main">
+         <div class="nav_left">
+            <a href="index.html" class="on">首页</a>
+            <a href="html/about.html">关于我们</a>
+            <a href="html/product.html">时尚产品</a>
+            <a href="html/news.html">时尚资讯</a>
+            <a href="html/lianxi.html">联系我们</a>
+            <a href="html/denglu.html">用户登录</a>
+            <a href="html/shuoming.html">站点说明</a>
+         </div>
+         <div class="nav_right">
+             <ul>
+                <li><img src="images/1.png" />时尚</li>
+                <li><img src="images/2.png" />质好</li>
+                <li><img src="images/3.png" />多样</li>
+             </ul>
+         </div>
+    </div>
+</div>
+
+<div class="banner"><img src="images/banner.jpg" / title="banner"></div>
+
+<div class="lb">
+   <div class="main">
+    <ul>
+       <div id=demo style="overflow:hidden;width:1200px;color:#ffffff;">
+    <table border=0 align=left cellpadding=0 cellspacing="0" cellspace=0>
+      <tr>
+        <td valign=top id=demo1><table width="1200"  border="0" cellspacing="5" cellpadding="0">
+            <tr>
+              <td>
+                 <li class="lb1" style="margin-left:0;">
+                   <div class="wz">
+                   <h1>HOT SALE</h1>
+                   <h2>热卖推荐</h2>
+                  </div>
+                </li>
+              </td>
+              <td>
+                 <li class="lb2">
+          <div class="wz1">
+             <h1>NEW PRODUCTS</h1>
+             <h2>新款上市</h2>
+          </div>
+       </li>
+              </td>
+              <td>
+                 <li class="lb3">
+           <div class="wz2">
+               <h1>FLASH SALE</h1>
+               <h2>限时特卖</h2>
+           </div>
+       </li>
+              </td>
+            </tr>
+          </table></td>
+        <td id=demo2 valign=top></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+        var speed=30
+        demo2.innerHTML=demo1.innerHTML
+        function Marquee(){
+        if(demo2.offsetWidth-demo.scrollLeft<=0)
+            demo.scrollLeft-=demo1.offsetWidth
+        else{
+            demo.scrollLeft++
+            }
+        }
+        var MyMar=setInterval(Marquee,speed)
+        demo.onmouseover=function() {clearInterval(MyMar)}
+        demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+    </script> 
+       
+       
+       
+    </ul>
+   </div>
+</div>
+
+<div class="title">
+    <h1>LATEST PRODUCTS</h1>
+    <h2>较新产品</h2>
+    <h3><img src="images/nav_bg.png" /></h3>
+</div>
+
+<div class="cp">
+    <div class="main">
+        <ul>
+           <li style="margin-left:0;"><a href="javascript:;" onmouseover="MM_effectShake(this)"><img src="images/cp.jpg" / title="帽子" border="0"></a>
+          <h1>帽子</h1><h2>¥100.00</h2></li>
+           <li><a href="javascript:;" onmouseover="MM_effectShake(this)"><img src="images/cp1.jpg" / title="皮带" border="0"></a>
+          <h1>皮带</h1><h2>¥180.00</h2></li>
+           <li><a href="javascript:;" onmouseover="MM_effectShake(this)"><img src="images/cp2.jpg" / title="单肩包女包" border="0"></a>
+          <h1>单肩包女包</h1><h2>¥350.00</h2></li>
+           <li><a href="javascript:;" onmouseover="MM_effectShake(this)"><img src="images/cp3.jpg" / title="太阳眼镜" border="0"></a>
+          <h1>太阳眼镜</h1><h2>¥260.00</h2></li>
+        </ul>
+    </div>
+</div>
+
+<center>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center" style="margin-bottom:50px;">
+  <tr>
+    <td><img src="images/4.JPG" id="Image1" / title="包包" onMouseOver="MM_swapImage('Image1','','images/5.JPG',1)" onMouseOut="MM_swapImgRestore()"></td>
+    <td rowspan="2"><img src="images/6.JPG" /  title="服装"></td>
+  </tr>
+  <tr>
+    <td>
+      <video id="media" width="598" height="299" controls> 
+  <source src="video/ss.mp4">
+  </video>
+    </td>
+    </tr>
+</table>
+</center>
+
+<div class="title">
+    <h1>FASHION PRODUCTS</h1>
+    <h2>时尚产品</h2>
+    <h3><img src="images/nav_bg.png" /></h3>
+</div>
+
+<div class="cp">
+    <div class="main">
+        <ul>
+           <li style="margin-left:0;"><a href="html/product.html"><img src="images/s.jpg" / title="连衣裙"></a><h1>连衣裙</h1><h2>¥249.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s1.jpg" / title="品牌手表"></a><h1>品牌手表</h1><h2>¥1080.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s2.jpg" / title="儿童套装"></a><h1>儿童套装</h1><h2>¥280.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s3.jpg" / title="单肩包"></a><h1>单肩包</h1><h2>¥450.00</h2></li>
+           <li style="margin-left:0;"><a href="html/product.html"><img src="images/s4.jpg" / title="童鞋"></a><h1>童鞋</h1><h2>¥380.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s5.jpg" / title="高档皮鞋"></a><h1>高档皮鞋</h1><h2>¥580.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s6.jpg" / title="男士衬衫"></a><h1>男士衬衫</h1><h2>¥150.00</h2></li>
+           <li><a href="html/product.html"><img src="images/s7.jpg" / title="儿童帽子"></a><h1>儿童帽子</h1><h2>¥80.00</h2></li>
+        </ul>
+    </div>
+</div>
+
+<div class="foot">版权所有：新乡学院 20级计算机科学与技术(专升本)2班 赵永占 20204131110 </div>
+<embed src="audio/莫名我就喜欢你.mp3" loop=false aotostart=true mastersound hidden=true width=0 height=0></embed> 
+</body>
+</html>
